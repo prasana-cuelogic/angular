@@ -2,10 +2,10 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
+var app = angular.module('myApp.controllers', []);
+app.controller('MyCtrl1', ['$scope', function($scope) {
 
   }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+app.controller('MyCtrl2', ['$scope', function($scope) {
 
   }]);
