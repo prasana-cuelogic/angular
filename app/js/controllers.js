@@ -2,10 +2,17 @@
 
 /* Controllers */
 
-var app = angular.module('myApp.controllers', []);
-app.controller('MyCtrl1', ['$scope', function($scope) {
-
-  }])
-app.controller('MyCtrl2', ['$scope', function($scope) {
+var objApp = angular.module('myAngularApp.controllers', []);
+objApp.controller('MyCtrl1', ['$scope', function($scope) {
 
   }]);
+objApp.controller('MyCtrl2', ['$scope', function($scope) {
+  }]);
+
+var controllers = {};
+
+controllers.myController = function($scope){
+	$scope.client = "World";
+}
+objApp.controller(controllers);
+
