@@ -3,10 +3,10 @@
 /* Controllers */
 
 var objApp = angular.module('myAngularApp.controllers', []);
-objApp.controller('MyCtrl1', ['$scope', function($scope) {
+objApp.controller('MyCtrl_1', ['$scope', function($scope) {
 
   }]);
-objApp.controller('MyCtrl2', ['$scope', function($scope) {
+objApp.controller('MyCtrl_2', ['$scope', function($scope) {
   }]);
 
 var controllers = {};
