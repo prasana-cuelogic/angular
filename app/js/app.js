@@ -10,7 +10,10 @@ angular.module('myAngularApp', [
   'myAngularApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/', {templateUrl: 'partials/root.html', controller: 'myController'});
+  $routeProvider.when('/about-us', {templateUrl: 'partials/about_us.html', controller: 'aboutUsController'});
+  $routeProvider.when('/join-us', {templateUrl: 'partials/careers.html', controller: 'joiinUsController'});
+  $routeProvider.when('/cuelogic/clients', {templateUrl: 'partials/clients.html', controller: 'clientsController'});
+  $routeProvider.when('/terms-and-conditions', {templateUrl: 'partials/terms_conditions.html', controller: 'termsConditonsController'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
