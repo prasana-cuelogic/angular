@@ -14,10 +14,14 @@ var controllers = {};
 controllers.headerMenu = function($scope){
 	$scope.arrMenu = [
 	{url:'#/', title:'Home'},
-	{url:'#/about-us', title:'About Us'}, 
-	{url:'#/join-us', title:'Careers'}, 
-	{url:'#/cuelogic/clients', title:'Client'}, 
-	{url:'#/terms-and-conditions', title:'Terms & Conditions'},];
+	{url:'#/about-us', title:'About Me'}, 
+	{url:'#/join-us', title:'Join Us'}, 
+	{url:'#/cuelogic/clients', title:'Client'}
+	];
+};
+
+controllers.footerMenu = function($scope){
+	$scope.arrMenu = [{url:'#/terms-and-conditions', title:'Terms & Conditions'}];
 };
 controllers.termsConditonsController = function ($scope){
 	$scope.pageTitle = "Terms And Conditions";

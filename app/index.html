@@ -40,6 +40,11 @@
 
   <div>Angular seed app: v<span app-version></span></div>
 
+<div data-ng-controller="footerMenu">
+  <ul class="menu">
+    <li data-ng-repeat="menu in arrMenu"><a href="{{menu.url}}">{{menu.title}}</a></li>    
+  </ul>
+  </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -50,5 +55,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+
 </body>
 </html>
