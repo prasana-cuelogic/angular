@@ -8,4 +8,12 @@ angular.module('myAngularApp.directives', []).
     return function(scope, elm, attrs) {
       elm.text(version);
     };
-  }]);
+  }]).
+  directive ('ngHeader',function(){
+  	return function(){
+  		
+  	}
+  })
+  ;
+
+

@@ -1,1 +1,5 @@
-<p>This is the partial for view 1.</p>
+<div data-ng-controller="headerMenu">
+    <ul class="menu">
+        <li data-ng-repeat="menu in arrMenu"><a href="{{menu.url}}">{{menu.title}}</a></li>    
+    </ul>
+</div>
