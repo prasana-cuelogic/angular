@@ -1,5 +1,5 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div data-ng-controller="footerMenu">
+    <ul class="menu">
+        <li data-ng-repeat="menu in arrMenu"><a href="{{menu.url}}">{{menu.title}}</a></li>    
+    </ul>
+</div>
